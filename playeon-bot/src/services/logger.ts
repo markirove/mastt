@@ -1,4 +1,3 @@
-import { logUserStarted } from './logs/userStarted.js'
 import { logBotJoinedChat } from './logs/botJoinedChat.js'
 import { logBotLeftChat } from './logs/botLeftChat.js'
 import { logPrefixChanged } from './logs/prefixChanged.js'
@@ -10,7 +9,6 @@ import { logCommandError } from './logs/commandError.js'
 export type Logger = typeof logger
 
 export const logger = {
-  userStarted: logUserStarted,
   botJoinedChat: logBotJoinedChat,
   botLeftChat: logBotLeftChat,
   prefixChanged: logPrefixChanged,

@@ -10,7 +10,7 @@ const PRIVACY = md`**Privacy - what Playeon collects**
 • **Playback** - timestamps of tracks played (for stats). Not tied to your identity.
 
 **The mini-app (web room)**
-• **Telegram login data** - the signed `initData` Telegram sends, verified to confirm it's really you.
+• **Telegram login data** - the signed  Telegram sends, verified to confirm it's really you.
 • **Room activity** - who's connected and what's playing, live, so the room stays in sync. It isn't kept after you leave.
 
 **What I never do**

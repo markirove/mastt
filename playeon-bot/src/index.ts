@@ -1,7 +1,6 @@
 import { tg, dp, setBotInfo } from './client.js'
 import { initMongo, collections } from './services/mongo.js'
 import { initRedis, cache } from './services/redis.js'
-import { logger } from './services/logger.js'
 import { config } from './config.js'
 import { loadCommands } from './core/loader.js'
 import { registerHelpCallbacks } from './core/helpCallbacks.js'

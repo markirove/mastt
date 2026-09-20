@@ -60,7 +60,7 @@ process.on('uncaughtException', (err) => {
 async function main() {
   await Promise.all([initMongo(), initRedis()])
 
-  dp.inject({ db: collections, cache, logger, config })
+  dp.inject({ db: collections, cache, config })
 
   /*
     Handler exceptions have nowhere to propagate but the process. A raw

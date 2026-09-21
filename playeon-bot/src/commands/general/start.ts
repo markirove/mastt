@@ -49,9 +49,7 @@ export default defineCommand({
       { _id: String(user.id), startedAt: { $exists: false } },
       { $set: { startedAt: now } },
     )
-    if (startRes.modifiedCount > 0) {
-      logger.userStarted(user)
-    }
+    
 
     const payload = args[0]?.toLowerCase()
     if (payload === 'guide' || payload === 'help') {

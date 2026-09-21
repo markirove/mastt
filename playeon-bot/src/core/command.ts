@@ -3,7 +3,6 @@ import type { MessageContext } from '@mtcute/dispatcher'
 import type { RoleMask, ResolvedRole, AdminRight } from './permissions.js'
 import type { Collections } from '../services/mongo.js'
 import type { CacheService } from '../services/redis.js'
-import type { Logger } from '../services/logger.js'
 
 export type CommandContextType =
   | 'private' | 'bot' | 'group' | 'supergroup' | 'channel'
@@ -23,7 +22,6 @@ export type CommandContext = {
   context: CommandContextType
   db: Collections
   cache: CacheService
-  logger: Logger
 }
 
 export type CommandHandler = (ctx: CommandContext) => Promise<void> | void
